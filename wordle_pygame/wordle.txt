@@ -1,0 +1,1 @@
+Just wordle? using tabatkins's word list at https://github.com/tabatkins/wordle-list
