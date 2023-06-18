@@ -5,6 +5,7 @@ import random
 import time
 from pygame.locals import *
 
+#this is not my code i dont know where it came from
 def clip(surface, x, y, x_size, y_size):
     handle_surface = surface.copy()
     clipRect = pygame.Rect(x,y,x_size,y_size)
