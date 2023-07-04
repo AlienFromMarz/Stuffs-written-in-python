@@ -5,7 +5,6 @@ import random
 
 pygame.init()
 window = pygame.display.set_mode((500,500))
-tile_size = 5
 
 
 def draw_map(map, closed_node, open_node):
