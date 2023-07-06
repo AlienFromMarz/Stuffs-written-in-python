@@ -7,7 +7,7 @@ window = pygame.display.set_mode((1000,1000))
 tile_size = 5
 texure = pygame.image.load('images/texture.png')
 texures = []
-
+#下面的clip我忘了是從哪來的了但不是我的code，但只是用於把材質裁切而已，並未用於演算法內
 def clip(surface, x, y, x_size, y_size):
     handle_surface = surface.copy()
     clipRect = pygame.Rect(x,y,x_size,y_size)
