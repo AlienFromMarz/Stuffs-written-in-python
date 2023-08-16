@@ -1,5 +1,5 @@
-# Games-written-in-python
-Made with pygame or turtle
+# Stuffs-written-in-python
+Made with pygame or turtle or matplotlib
 
 Hello, welcome to my repository, where I upload stuff I made with python.
 I am not a good programmer, I am only a highschooler, I do this for fun,
