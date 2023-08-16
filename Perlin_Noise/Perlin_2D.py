@@ -26,8 +26,6 @@ def random_gra(map_size):
     return gradients
 def in_pro(vect0, vect1):
     return (vect0[0]*vect1[0]+vect0[1]*vect1[1])
-def lerp(a,b,x):
-    return a+x*(b-a)
 def perlin_noise(sample_rate, world_size, gradients):
     _x=0
     map=[]
