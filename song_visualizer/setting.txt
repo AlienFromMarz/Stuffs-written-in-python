@@ -1,0 +1,7 @@
+volume 0.24
+video_disable 1.0
+liked{
+C:\Users\allen\OneDrive\桌面\python_project\game\SONGplayer\new.allenlist
+C:\Users\allen\OneDrive\桌面\python_project\game\SONGplayer\japansong.allenlist
+C:\Users\allen\OneDrive\桌面\python_project\game\SONGplayer\classic.allenlist
+}
