@@ -1,2 +1,2 @@
 3D stuff!
-this is the old version, "3Dstuff" is the new one.
+this is the new version, "3Dstuff" is the old one.
