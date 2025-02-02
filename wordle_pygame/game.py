@@ -67,9 +67,6 @@ class main():
         self.letters3 = []
         self.press_key_ = ""
         
-        self.background = pygame.image.load("background.jpg")
-        self.background = pygame.transform.scale(self.background, (self.width, self.width/699*1200))
-        
         self.main_loop()
     def reset(self):
         self.done = ""
@@ -196,7 +193,6 @@ class main():
     def render(self):
         self.screen.fill((0,0,0))
         
-        self.screen.blit(self.background, (0,0))
         
         black_transp = pygame.Surface(self.screen.get_size())
         black_transp.set_alpha(128)
