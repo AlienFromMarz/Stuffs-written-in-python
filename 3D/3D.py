@@ -21,7 +21,7 @@ l=-r
 X,Y=0,0
 
 
-#other shit
+#other
 def load(file,scl=1):
     with open(file, mode="r+") as f:
         verts = []
@@ -39,7 +39,7 @@ def load(file,scl=1):
                 
     return verts, faces
 
-#math shit
+#math
 def camera_projection(p,r_v,u_v,f_v,pos):
     l_v = [-r_v[0],-r_v[1],-r_v[2]]
     _f_v = [-f_v[0],-f_v[1],-f_v[2]]
@@ -327,7 +327,7 @@ class fighter():
         pygame.draw.line(screen, (50,50,255),p_o[:2],p_u[:2],2)
         
         
-#pygame shit
+#pygame
 def controll():  
     global w,h,r,l,vmatrix
     for e in pygame.event.get():
