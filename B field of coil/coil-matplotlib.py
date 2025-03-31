@@ -58,8 +58,8 @@ for _x in x:
         dist0 = dist((_x,_z),(radius,0))
         dist1 = dist((_x,_z),(-radius,0))
 
-        # if dist0<=wirethickness or dist1<=wirethickness:
-        #     continue
+        if dist0<=wirethickness or dist1<=wirethickness:
+            continue
         v=[0,0,0]
         for i,_ in enumerate(coil_pos):
             v0 = get_B(I,coil_pos[i],coil_vec[i],[_x,0,_z])
@@ -99,7 +99,7 @@ ax.set_ylim([-test_r, test_r])
 # Bz = 5*Bz / length
 
 ax.quiver(Px,Pz,Bx,Bz,color="white")
-ax.scatter([radius,-radius],[0,0],color="orange")
+# ax.scatter([radius,-radius],[0,0],color="orange")
 
 ax.set_title("B Field of A Coil")
 ax.set_xlabel("X(meters)")
