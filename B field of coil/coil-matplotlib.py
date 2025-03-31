@@ -26,7 +26,7 @@ def get_coil_v(radius=radius,delta=delta):
 def get_B(I,l_pos,l_vector,P):
     r_vector = [P[0]-l_pos[0],P[1]-l_pos[1],P[2]-l_pos[2]]
     r = numpy.sqrt(r_vector[0]**2+r_vector[1]**2+r_vector[2]**2)
-    r_vector = [r_vector[0]/r,r_vector[1]/r,r_vector[2]/r]
+    r_vector = [r_vector[0],r_vector[1],r_vector[2]]
     
     X=(10**(-7))*I/(r**3)
     B_vector = X*numpy.cross(l_vector,r_vector)
@@ -58,8 +58,8 @@ for _x in x:
         dist0 = dist((_x,_z),(radius,0))
         dist1 = dist((_x,_z),(-radius,0))
 
-        if dist0<=wirethickness or dist1<=wirethickness:
-            continue
+        # if dist0<=wirethickness or dist1<=wirethickness:
+        #     continue
         v=[0,0,0]
         for i,_ in enumerate(coil_pos):
             v0 = get_B(I,coil_pos[i],coil_vec[i],[_x,0,_z])
